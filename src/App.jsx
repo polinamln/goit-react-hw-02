@@ -5,6 +5,7 @@ import "./App.css";
 import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 import Notification from "./components/Notification/Notification";
+import Description from "./components/Description/Description";
 
 function App() {
   const [feedbackCounts, setFeedbackCounts] = useState(() => {
@@ -52,11 +53,7 @@ function App() {
 
   return (
     <>
-      <h1>Sip Happens Café</h1>
-      <p>
-        Please leave your feedback about our service by selecting one of the
-        options below.
-      </p>
+      <Description></Description>
       <Options
         resetFeedback={resetFeedback}
         updateFeedback={updateFeedback}
